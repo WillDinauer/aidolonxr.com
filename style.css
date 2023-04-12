@@ -1,0 +1,164 @@
+:root {
+  --header-height: 80px;
+  --footer-height: 50px;
+  --font-family: 'Mulish', sans-serif;
+
+}
+
+/* Set margin and padding to 0 for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: var(--font-family);
+  color: white;
+}
+
+/* Set a background color for the whole page */
+body {
+  background-color: #f5f5f5;
+  position: relative; /* Set position to relative */
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
+}
+
+/* Style the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: var(--header-height);
+  text-align: center;
+  position: fixed; /* Set position to fixed */
+  top: 0; /* Set top to 0 */
+  left: 0; /* Set left to 0 */
+  right: 0; /* Set right to 0 */
+}
+
+.nav-container img {
+  width: 40px;
+}
+
+/* Style the company name in the header */
+.nav-title {
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-family);
+}
+
+.main {
+  position: absolute; /* Set position to absolute */
+  top: var(--header-height); /* Set top to the height of the header */
+  bottom: var(--footer-height); /* Set bottom to the height of the footer */
+  left: 0; /* Set left to 0 */
+  right: 0; /* Set right to 0 */
+  min-height: 550px;
+  /*background-image: url('images/bg1.png');
+  background-position: bottom;
+  background-size: cover;*/
+  background-color: #333;
+}
+
+.closed-beta-text {
+  font-size: 30px;
+  padding: 5px;
+  color: black;
+}
+
+.form-container {
+  margin: 50px;
+  float: right;
+  width: 45%;
+  min-width: 400px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px;
+}
+
+.mission-statement {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.mission-description {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: var(--font-family);
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  resize: none; /* Disable text area resize */
+}
+
+.input-container {
+  margin: 6px;
+} 
+
+/* Style the form submit button */
+button[type="submit"] {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Style the form submit button on hover */
+button[type="submit"]:hover {
+  background-color: #444;
+}
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: var(--footer-height);
+  width: 100%;
+}
+
+/* Style the footer text */
+.footer-text {
+  font-size: 14px;
+}
