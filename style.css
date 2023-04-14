@@ -2,6 +2,7 @@
   --header-height: 80px;
   --footer-height: 50px;
   --font-family: 'Mulish', sans-serif;
+  --background-color: #222;
 
 }
 
@@ -26,7 +27,7 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #333;
+  background-color: var(--background-color);
   color: #fff;
   padding: 20px;
   height: var(--header-height);
@@ -60,7 +61,7 @@ body {
   /*background-image: url('images/bg1.png');
   background-position: bottom;
   background-size: cover;*/
-  background-color: #333;
+  background-color: var(--background-color);
 }
 
 .closed-beta-text {
@@ -130,7 +131,7 @@ textarea {
 
 /* Style the form submit button */
 button[type="submit"] {
-  background-color: #333;
+  background-color: var(--background-color);
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -148,7 +149,7 @@ button[type="submit"]:hover {
 }
 /* Style the footer */
 .footer {
-  background-color: #333;
+  background-color: var(--background-color);
   color: #fff;
   padding: 20px;
   text-align: center;
