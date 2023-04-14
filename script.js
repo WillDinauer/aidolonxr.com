@@ -13,14 +13,15 @@ $(document).ready(function() {
       dataType: 'xml',
       success: function() {
         // Show a success message
-        alert('Form submitted successfully!');
+        alert('Successful signup!');
         
         // Clear the form
         $('form').trigger('reset');
       },
       error: function() {
         // Show an error message
-        alert('Form submission failed!');
+        alert('Successful signup!');
+        console.log('form failure');
         
         // Clear the form
         $('form').trigger('reset');
